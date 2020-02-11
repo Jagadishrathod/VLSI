@@ -8,7 +8,7 @@ reg write;
 reg reset;
 reg clk;
 wire [31:0] rdDataA;
-wire [32:0] rdDataB;
+  wire [31:0] rdDataB;
 
 regfile32x16 uut (.wrData(wrData), .wrAddr(wrAddr), .rdDataA(rdDataA), .rdAddrA(rdAddrA), .rdDataB(rdDataB), .rdAddrB(rdAddrB), .write(write), .reset(reset), .clk(clk) );
 initial begin
