@@ -1,17 +1,17 @@
 module Logic_unit( Opcode,A,B,Result,Sel);
 input [3:0]  Opcode;
 input [15:0] A,B;
-output reg [15:0] Result = 16'b0;
-output reg Sel = 1'b0;
+output reg [15:0] Result;
+output reg Sel;
 
 parameter  [3:0] AND = 4'b1000,
                  NAND = 4'b1001,
-				 NOR = 4'b1010,
-				 OR = 4'b1011,
+		 NOR = 4'b1010,
+		 OR = 4'b1011,
                  NOT = 4'b1100,
                  XOR = 4'b1101,    
-				 XNOR = 4'b1110,
-				 NEG = 4'b1111; //2'complement
+		 XNOR = 4'b1110,
+		 NEG = 4'b1111; //2'complement
 always @ (Opcode or A or B)
 begin
 case (Opcode)
