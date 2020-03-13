@@ -1,5 +1,4 @@
 `include "FullAdder4_2.v"
-
 module FullAdder8 (A,B,Cin,Sum,Carry);
 	input [7:0] A,B;
 	input Cin;
