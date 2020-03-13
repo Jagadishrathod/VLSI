@@ -1,8 +1,7 @@
-module FullAdder3(A,B,Cin,sum,C);                                                                            
+module FullAdder3(A,B,Cin,sum,C);  
+
 	input A,B,Cin;
-	output sum,C;
-	
+	output sum,C;	
 	assign sum = A ^ B ^ Cin;
-	assign C = ((A ^ B)&Cin) | (A&B);
-	
+	assign C = ((A ^ B)&Cin) | (A&B);	
 endmodule
