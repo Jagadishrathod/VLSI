@@ -7,10 +7,10 @@ module wallace16 (A,B,out);
 	output [31:0] out;
 	wire [15:0] w1,w2,w3,w4;
 	
-	Wallace w1(A[7:0],B[7:0],w1); 
-	Wallace w2(A[15:8],B[7:0],w2);
-	Wallace w3(A[7:0],B[15:8],w3);
-	Wallace w4(A[15:8],B[15:8],w4);
+	Wallace uut1 (A[7:0],B[7:0],w1); 
+	Wallace uut2 (A[15:8],B[7:0],w2);
+	Wallace uut3 (A[7:0],B[15:8],w3);
+	Wallace uut4 (A[15:8],B[15:8],w4);
 
 	assign out[7:0] = w1[7:0];
 	
