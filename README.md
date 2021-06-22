@@ -1,4 +1,5 @@
 What Is Icarus Verilog?
+
 Icarus Verilog is a Verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format. For batch simulation, the compiler can generate an intermediate form called vvp assembly. This intermediate form is executed by the ''vvp'' command. For synthesis, the compiler generates netlists in the desired format.
 The compiler proper is intended to parse and elaborate design descriptions written to the IEEE standard IEEE Std 1364-2005. This is a fairly large and complex standard, so it will take some time to fill all the dark alleys of the standard, but that's the goal.
 
@@ -26,6 +27,10 @@ Unpack the tar-ball and cd into the verilog-######### directory
 (presumably, that is how you got to this README) and compile the source
 with the commands:
 
- ``` iverilog filename.v
-  iverilog filename_tb.v
-  ./a.out```
+ ``` iverilog filename.v```
+ 
+ 
+ ``` iverilog filename_tb.v```
+ 
+ 
+  ```./a.out```
