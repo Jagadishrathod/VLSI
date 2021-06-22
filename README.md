@@ -7,12 +7,14 @@ Icarus Verilog is a work in progress, and since the language standard is not sta
 
 The main porting target is Linux, although it works well on many similar operating systems. Various people have contributed precompiled binaries of stable releases for a variety of targets. These releases are ported by volunteers, so what binaries are available depends on who takes the time to do the packaging. Icarus Verilog has been ported to That Other Operating System, as a command line tool, and there are installers for users without compilers. You can compile it entirely with free tools, too, although there are precompiled binaries of stable releases.
 
+
 Where is Icarus Verilog?
+
 
 NOTE: This is a quick summary of where to get Icarus Verilog. for more complete download and install instructions, look -->here.
 
-The Current release is available in source and a variety of binary forms in the FTP directory <ftp://ftp.icarus.com/pub/eda/verilog/v11/>. Updates to the stable release may be made from time to time to fix problems, but there should be no compatibility issues within this version series. This will continue to be maintained until rendered obsolete by a new stable release.
-Development snapshots are made fairly often, and made available in the FTP directory <ftp://icarus.com/pub/eda/verilog/snapshots>. The files are gzip compressed tar files that contain the source and makefiles. These snapshots follow development progress, and, although the latest features are included in this source, compatibility from snapshot to snapshot is not guaranteed.
+The Current release is available in source and a variety of binary forms in the FTP directory ```<ftp://ftp.icarus.com/pub/eda/verilog/v11/>.``` Updates to the stable release may be made from time to time to fix problems, but there should be no compatibility issues within this version series. This will continue to be maintained until rendered obsolete by a new stable release.
+Development snapshots are made fairly often, and made available in the FTP directory ```<ftp://icarus.com/pub/eda/verilog/snapshots>.``` The files are gzip compressed tar files that contain the source and makefiles. These snapshots follow development progress, and, although the latest features are included in this source, compatibility from snapshot to snapshot is not guaranteed.
 
 And finally, the current "git" repository is available for read-only access via anonymous git cloning. This allows for those who which to track my progress and contribute with patches timely access to the most bleeding edge copy of the source. Access the git repository of Icarus Verilog with the commands:
 ```
